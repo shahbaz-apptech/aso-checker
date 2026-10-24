@@ -1,0 +1,16 @@
+{
+  "name": "aso-skills",
+  "version": "1.0.0",
+  "description": "App Store & Google Play ASO Metadata Validator Agent Skills based on Appfigures 2026 rules",
+  "keywords": ["agent-skills", "aso", "app-store-optimization", "claude-skills", "gemini-skills", "cursor"],
+  "license": "MIT",
+  "files": [
+    "SKILL.md",
+    "skills"
+  ],
+  "skills": [
+    "./skills/aso-metadata-validator",
+    "./skills/ios-app-store-aso-validator",
+    "./skills/google-play-aso-validator"
+  ]
+}
