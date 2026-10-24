@@ -16,29 +16,29 @@ This repository follows the official **Agent Skills Specification** (`skills/<sk
 
 ### 1. Install All ASO Skills (Interactive)
 ```bash
-npx skills add shahbaz-apptech/aso-skills
+npx skills add shahbaz-apptech/aso-checker
 ```
 
 ### 2. Install Only a Specific Modular Skill
 ```bashS
 # Install ONLY the iOS App Store & Apple Ads Validator
-npx skills add shahbaz-apptech/aso-skills --skill ios-app-store-aso-validator
+npx skills add shahbaz-apptech/aso-checker --skill ios-app-store-aso-validator
 
 # Install ONLY the Google Play & Keyword Density Validator
-npx skills add shahbaz-apptech/aso-skills --skill google-play-aso-validator
+npx skills add shahbaz-apptech/aso-checker --skill google-play-aso-validator
 
 # Install the combined All-in-One Validator
-npx skills add shahbaz-apptech/aso-skills --skill aso-metadata-validator
+npx skills add shahbaz-apptech/aso-checker --skill aso-metadata-validator
 ```
 
 ### 3. Install Globally for All Projects
 ```bash
-npx skills add shahbaz-apptech/aso-skills --all --global
+npx skills add shahbaz-apptech/aso-checker --all --global
 ```
 
 ### 4. List Available Skills in This Repo
 ```bash
-npx skills add shahbaz-apptech/aso-skills --list
+npx skills add shahbaz-apptech/aso-checker --list
 ```
 
 ---
@@ -48,7 +48,7 @@ npx skills add shahbaz-apptech/aso-skills --list
 For `npx skills add` to detect each skill automatically, every skill folder name inside `skills/` **must exactly match** the `name:` field in its `SKILL.md` frontmatter, and the file inside must be named `SKILL.md`:
 
 ```text
-aso-skills/
+aso-checker/
 ├── README.md
 ├── package.json                                  # Optional npm / skills pack manifest
 ├── SKILL.md                                      # Root entry point (All-in-One skill)
